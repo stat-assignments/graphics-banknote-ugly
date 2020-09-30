@@ -39,25 +39,32 @@ This means you will need to use a local file path when you read the data in via 
 
 The R package `alr3` contains a data set called banknote, consisting of (physical) measurements on 200 Swiss bank notes, 100 of which are genuine, while the other half is counterfeit. Load this data set (you might have to install the package) using the code below. 
 
-```{r}
+```{r, echo = F}
 # install.packages("alr3")
 library(alr3) # if this throws an error of the form 'there is no package called alr3', uncomment the line above, run it once, then comment the line out again and run the code chunk again.
 data(banknote)
-banknote$Y <- factor(banknote$Y)
+banknote$Y <- factor(banknote$Y, labels = c("Genuine", "Fake"))
+
+library(ggplot2)
 ```
 
 For each of the three figures you create below, write a two-three sentence summary, describing the structure of the plot: what type of plot is it? Which variables are mapped to x, to y, and to the (fill) color? What is the main message of the plot: what is your main finding, i.e. what do you want viewers to learn from the plot? Are there any anomalies or outliers?
 
-1. Use one of the object inspecting functions and interpret the result in the data that you see.
+1. Use one of the object inspecting functions and describe the data set - what do the variables appear to mean?
 ```{r}
 ```
-2. Use `ggplot2` to draw a barchart of Y (0 is genuine, 1 is counterfeit). Map Y to the fill color of the barchart.
+
+
+2. Use `ggplot2` to draw a barchart of Y (0 is genuine, 1 is counterfeit). Also, map Y to the fill color of the bars. (Yes, this plot is a bit simplistic, but what does it show?)
 ```{r}
+
 ```
+
 3. Use `ggplot2` to draw a histogram of one of the variables in the dataset that shows a distinction between genuine and counterfeit banknotes. Use fill color to show this difference. Choose the binwidth such that there are no gaps in the middle range of the histogram.
 ```{r}
 ```
-4. Use `ggplot2` to draw a scatterplot of two (continuous) measurements, color by Y. Try to find a pair of measurements that allow you to separate perfectly between genuine and counterfeit banknotes.
+
+4. Use `ggplot2` to draw a scatterplot of two (continuous) measurements, color by Y. Try to find a pair of measurements that provides as much separation as possible between the clusters of points for genuine and counterfeit banknotes.
 ```{r}
 ```
 
