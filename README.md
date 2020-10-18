@@ -33,9 +33,13 @@ Some things to keep in mind:
     - source document, 
     - any file dependencies (like pictures or data), and 
     - the final result (if you are planning to make the final result available online). 
-    
-- XeLaTeX allows you to use different fonts, but may cause compilation errors if you use e.g. beamer templates not designed to be compiled with XeLaTeX. You can change which engine is used by going to Project Options in RStudio.
 
 - When you ask for help, remember to make your question as reproducible as possible!
 
 Upload the link to the compiled index.html file to Canvas to complete this assignment.
+
+
+If you have done all of the steps correctly, you should be able to find your index.html file by going to this url: 
+https://stat850-unl.github.io/10-presentation-<your-gh-username-here>/
+    
+(Note that you'll have to replace the part in brackets appropriately.)
