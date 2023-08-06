@@ -67,12 +67,9 @@ You are free to add additional variables and layers, modify the aesthetics used,
 
 [If you need inspiration, look here.](https://www.allisonhorst.com/post/do-your-worst/)
 
-You have two datasets to plot here:
+Use the `palmerpenguins` data, which has been exported into `penguins.csv`
 
-- `penguins.csv`, which is just the penguins data from the `palmerpenguins` R package, exported.
-- `2021 NTSE Endowment Market Values US and Canadian Institutions--REVISED March 1 2022.xlsx`, which is a dataset about 2021 Endowment market values for US and canadian educational institutions. Obtained from https://www.nacubo.org/Research/2021/Public-NTSE-Tables.
-
-You can use R for one dataset, and python for the other. Create the ugliest graph you can manage with each dataset. You can pick which variables to plot, what type of chart to make, and what aesthetic mappings to use.
+Create the ugliest graph you can manage with each language. You can pick which variables to plot, what type of chart to make, and what aesthetic mappings to use.
 
 ### Part 1: R
 
