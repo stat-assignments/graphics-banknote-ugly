@@ -1,5 +1,5 @@
 ---
-title: "Homework 08: Data Visualization"
+title: "Homework: Data Visualization"
 author: "Firstname Lastname"
 output: html_document
 ---
